@@ -453,6 +453,9 @@
 			<TargetObject condition="begin with">\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Control\Winlogon\</TargetObject> <!--Microsoft:Windows: Providers notified by WinLogon-->
 			<TargetObject condition="end with">\FriendlyName</TargetObject> <!--Microsoft:Windows: New devices connected and remembered-->
 			<TargetObject condition="is">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\InProgress\(Default)</TargetObject> <!--Microsoft:Windows: See when WindowsInstaller is engaged-->
+			<TargetObject condition="begin with">\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Enum\Root\LEGACY_</TargetObject> <!-- Often used by malware -->
+			<!-- Testing - Unknown log volume but relevant registry keys -->
+			<TargetObject condition="begin with">\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Services\</TargetObject> <!--Windows Services -->
 			<!--Persistence Methods-->
 			<TargetObject condition="begin with">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Custom</TargetObject> <!-- Custom SHIM:FireEye FIN7 report - https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html -->
 			<TargetObject condition="begin with">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\InstalledSDB</TargetObject> <!-- Custom SHIM:FireEye FIN7 report - https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html -->
