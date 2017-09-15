@@ -5,11 +5,9 @@
   Master project:	https://github.com/SwiftOnSecurity/sysmon-config
   Master license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
 
-  Fork version:	<N/A>
-  Fork author:	<N/A>
-  Fork project:	<N/A>
-  Fork license:	<N/A>
- 
+  Fork version:	TK-CERT
+  Fork author:  https://github.com/TKCERT/
+  Fork license:	Creative Commons Attribution 4.0
   REQUIRED: Sysmon version 6.00 or higher (due to changes in registry syntax)
 	https://technet.microsoft.com/en-us/sysinternals/bb545021.aspx
 	Note that 6.03 has important fixes for filtering
