@@ -525,6 +525,8 @@
 			<!--SECTION: 3rd party-->
 			<Image condition="is">C:\Program Files\WIDCOMM\Bluetooth Software\btwdins.exe</Image> <!--Constantly writes to HKLM-->
 			<Image condition="is">C:\Program Files (x86)\Webroot\WRSA.exe</Image> <!--Webroot-->
+			<!-- Services Noise -->
+			<TargetObject condition="contains">\CurrentVersion\NetworkList\Profiles\</TargetObject>
 		</RegistryEvent>
 
 	<!--SYSMON EVENT ID 15 : ALTERNATE DATA STREAM CREATED-->
